@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Header from '../components/header';
-import Twitter from '../components/twitter';
-import GitHub from '../components/github';
+import LangDropdown from '../components/langDropdown';
 import { useState } from 'react';
 import useInterval from 'use-interval';
 import Link from 'next/link';
 
 const Profile = () => {
+  const [lang, setLang] = useState('ja');
+
   const [displayedBasicInfoTitle, setDisplayedBasicInfoTitle] = useState('');
   const [displayedBiographyTitle, setDisplayedBiographyTitle] = useState('');
   const [displayedSkillsTitle, setDisplayedSkillsTitle] = useState('');
@@ -60,6 +61,15 @@ const Profile = () => {
       <div>
         <Header />
         <main className="bg-gray-50 min-h-screen">
+
+          <div className="fixed w-screen mt-16">
+            <div className="flex justify-center">
+              <div className="w-screen max-w-7xl px-3 flex justify-end">
+                <LangDropdown lang={lang} setLang={setLang} />
+              </div>
+            </div>
+          </div>
+
           <div className="flex justify-center">
             <div className="mt-24 text-2xl font-bold font-montserrat">
               <div className={`px-3 border-b-4 border-${messageColor}-400 transition duration-1000`}>
@@ -67,6 +77,12 @@ const Profile = () => {
               </div>
             </div>
           </div>
+
+          {lang === 'ja' ?
+            <div>日本語</div>
+            :
+            <div>English</div>
+          }
 
           <div className="flex justify-center">
             <div className="mt-24 text-2xl font-bold font-montserrat">
