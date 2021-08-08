@@ -24,7 +24,7 @@ const Header = () => {
         </div>
       </header>
 
-      <div className="top-12 fixed w-screen bg-white border-t-2" hidden={!showMenu} >
+      <div className="top-12 fixed w-screen bg-white border-t-2 z-50" hidden={!showMenu} >
         <div className=" px-4 py-4 max-w-7xl mx-auto text-gray-500 ">
           <Link href="/">
             <div

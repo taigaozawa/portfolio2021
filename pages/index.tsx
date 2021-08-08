@@ -92,7 +92,7 @@ const Home = () => {
                 <Twitter className="fill-current text-gray-800 hover:text-gray-500 trainsition duration-500" width="30px" height="30px" />
               </div>
             </Link>
-            <Link href="https://twitter.com/taigaozawa">
+            <Link href="https://github.com/taigaozawa">
               <div className="cursor-pointer">
                 <GitHub className="ml-2 fill-current hover:text-gray-500 transition duration-500" width="30px" height="30px" />
               </div>

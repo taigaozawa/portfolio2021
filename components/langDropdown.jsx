@@ -19,7 +19,7 @@ const LangDropdown = ({lang, setLang}) => {
     <>
       <button
         className={
-          "w-40 text-gray-100 font-bold uppercase text-sm px-2 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 bg-gray-500"
+          "w-40 text-white text-opacity-100 uppercase text-sm px-2 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 bg-gray-700"
         }
         type="button"
         ref={btnDropdownRef}
@@ -34,7 +34,7 @@ const LangDropdown = ({lang, setLang}) => {
       <div
         ref={popoverDropdownRef}
         hidden={!dropdownPopoverShow}
-        className="w-40 bg-gray-200 text-base text-center z-50 list-none rounded shadow-lg mt-1"
+        className="z-20 w-40 bg-gray-200 text-base text-center list-none rounded shadow-lg mt-1"
       >
         <div
           className="cursor-pointer text-sm text-gray-600 pt-1.5 pb-1 border-b border-white hover:text-red-500 transition duration-400"
@@ -54,6 +54,12 @@ const LangDropdown = ({lang, setLang}) => {
         >
           ENGLISH
         </div>
+      </div>
+      <div
+        className="z-10 h-screen w-screen fixed top-0 left-0 opacity-0"
+        hidden={!dropdownPopoverShow}
+        onClick={() => setDropdownPopoverShow(false)}
+      >
       </div>
     </>
   );
