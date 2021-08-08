@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header';
 import Twitter from '../components/twitter';
 import GitHub from '../components/github';
+import External from '../components/external';
 import LangDropdown from '../components/langDropdown';
 import { useState } from 'react';
 import useInterval from 'use-interval';
@@ -316,13 +317,18 @@ const Profile = () => {
                     {'2022 -'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
-                    <a target="_blank" href="https://www.future.co.jp">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                    <div>
+                      <a
+                        target="_blank"
+                        href="https://www.future.co.jp"
+                        className="flex cursor-pointer hover:text-gray-500 transition duration-200"
+                      >
                         {lang === 'ja' ? 'フューチャー株式会社（予定）'
                           :
                           'Future Corporation (expected)'}
-                      </div>
-                    </a>
+                        <External className="pt-1 fill-current hover:text-gray-500 " />
+                      </a>
+                    </div>
                     <div className="text-sm text-gray-500">
                       {lang === 'ja' ?
                         '正社員 / ITコンサルタント / ソフトウェア開発'
@@ -339,10 +345,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <a target="_blank" href="https://dwango.co.jp/">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                      <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社ドワンゴ'
                           :
                           'Dwango Co., Ltd.'}
+                        <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
                     <div className="text-sm text-gray-500">
@@ -351,7 +358,6 @@ const Profile = () => {
                         :
                         'Part-time / Learning material development on programing  / Tool development'
                       }
-
                     </div>
                   </td>
                 </tr>
@@ -361,10 +367,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <a target="_blank" href="https://rit-inc.co.jp/">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                      <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社RIT'
                           :
                           'RIT Inc.'}
+                        <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
                     <div className="text-sm text-gray-500">
@@ -382,10 +389,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <a target="_blank" href="https://www.accenture.com/jp-ja">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                      <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'アクセンチュア株式会社'
                           :
                           'Accenture Japan Ltd'}
+                        <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
                     <div className="text-sm text-gray-500">
@@ -404,10 +412,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <a target="_blank" href="http://www.shukutoku-school.com/index.html">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                      <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '淑徳日本語学校'
                           :
                           'Shukutoku Japanese Language School'}
+                        <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
                     <div className="text-sm text-gray-500">
@@ -426,10 +435,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <a target="_blank" href="https://www.nttdata.com/">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                      <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社エヌ・ティ・ティ・データ（NTTデータ）'
                           :
                           'NTT DATA Corporation'}
+                        <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
                     <div className="text-sm text-gray-500">
@@ -447,10 +457,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <a target="_blank" href="https://www.future.co.jp">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                      <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'フューチャー株式会社'
                           :
                           'Future Corporation'}
+                        <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
                     <div className="text-sm text-gray-500">
@@ -468,10 +479,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <a target="_blank" href="https://caraquri.com/">
-                      <div className="cursor-pointer hover:text-gray-500 transition duration-200">
+                      <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'からくり株式会社'
                           :
                           'Caraquri Inc.'}
+                        <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
                     <div className="text-sm text-gray-500">
