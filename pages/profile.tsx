@@ -6,26 +6,44 @@ import { useState } from 'react';
 import useInterval from 'use-interval';
 import Link from 'next/link';
 
-const Home = () => {
-  const [displayedMessage, setDisplayedMessage] = useState('');
+const Profile = () => {
+  const [displayedBasicInfoTitle, setDisplayedBasicInfoTitle] = useState('');
+  const [displayedBiographyTitle, setDisplayedBiographyTitle] = useState('');
+  const [displayedSkillsTitle, setDisplayedSkillsTitle] = useState('');
   const [messageTimer, setMessageTimer] = useState(0);
   const [messageColor, setMessageColor] = useState('yellow');
-  const welcomeMessages = [
-    'ようこそ！',
-    'Welcome!',
-    'こんにちは！',
-    'Hello!'
+  const basicInfoTitles = [
+    '基本情報',
+    'Basic Information'
+  ]
+  const biographyTitles = [
+    '経歴',
+    'Biography'
+  ]
+  const skillsTitles = [
+    'スキル・資格',
+    'Skills & Qualification'
   ]
   const messageColors = ['yellow', 'pink', 'green', 'sky', 'red', 'gray', 'blue', 'indigo', 'purple']
   const messageBuffer = 30;
-  const messagePatterns = welcomeMessages.map(msg => {
+  const basicInfoPatterns = basicInfoTitles.map(msg => {
+    const patterns: string[] = Array(msg.length + messageBuffer).fill('');
+    return patterns.map((p, i) => msg.slice(0, i + 1));
+  }).flat();
+  const biographyPatterns = biographyTitles.map(msg => {
+    const patterns: string[] = Array(msg.length + messageBuffer).fill('');
+    return patterns.map((p, i) => msg.slice(0, i + 1));
+  }).flat();
+  const skillsPatterns = skillsTitles.map(msg => {
     const patterns: string[] = Array(msg.length + messageBuffer).fill('');
     return patterns.map((p, i) => msg.slice(0, i + 1));
   }).flat();
 
   useInterval(() => {
     setMessageTimer(messageTimer + 1);
-    setDisplayedMessage(messagePatterns[messageTimer % messagePatterns.length]);
+    setDisplayedBasicInfoTitle(basicInfoPatterns[messageTimer % basicInfoPatterns.length]);
+    setDisplayedBiographyTitle(biographyPatterns[messageTimer % biographyPatterns.length]);
+    setDisplayedSkillsTitle(skillsPatterns[messageTimer % skillsPatterns.length]);
   }, 120);
 
   useInterval(() => {
@@ -43,62 +61,28 @@ const Home = () => {
         <Header />
         <main className="bg-gray-50 min-h-screen">
           <div className="flex justify-center">
-            <div className="mt-36 text-4xl font-bold font-montserrat">
+            <div className="mt-24 text-2xl font-bold font-montserrat">
               <div className={`px-3 border-b-4 border-${messageColor}-400 transition duration-1000`}>
-                {displayedMessage}
+                {displayedBasicInfoTitle}
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-16">
-            <div className="text-xl font-bold text-gray-600">
-              小澤泰河
+
+          <div className="flex justify-center">
+            <div className="mt-24 text-2xl font-bold font-montserrat">
+              <div className={`px-3 border-b-4 border-${messageColor}-400 transition duration-1000`}>
+                {displayedBiographyTitle}
+              </div>
             </div>
-            <div className="text-xl font-bold text-gray-600 pl-2.5 ml-3 border-l border-gray-400">
-              Taiga Ozawa
+          </div>
+
+          <div className="flex justify-center">
+            <div className="mt-24 text-2xl font-bold font-montserrat">
+              <div className={`px-3 border-b-4 border-${messageColor}-400 transition duration-1000`}>
+                {displayedSkillsTitle}
+              </div>
             </div>
           </div>
-          <div className="flex justify-center mt-3 text-gray-500">
-            <span>筑波大学&nbsp;</span>
-            <span>物理学学位プログラム（M2）</span>
-          </div>
-          <div className="flex justify-center text-gray-500">
-            <span>Master&apos;s Program in Physics,&nbsp;</span>
-            <span>University of Tsukuba</span>
-          </div>
-
-          <div className="flex justify-center mt-12">
-            <Link href="/profile">
-              <div className="px-2 pt-2 pb-1.5 rounded bg-sky-600 hover:bg-sky-700 transition duration-500 text-white cursor-pointer">
-                <span className="font-bold">
-                  詳しいプロフィール&nbsp;
-                </span>
-                Detailed profile&nbsp;&nbsp;→
-              </div>
-            </Link>
-          </div>
-          <div className="flex justify-center mt-2">
-            <Link href="/notes">
-              <div className="px-2 pt-2 pb-1.5 rounded bg-pink-600 hover:bg-pink-700 transition duration-500 text-white cursor-pointer">
-                <span className="font-bold">
-                  ノート・ブログ
-                </span> Notes & Blog&nbsp;&nbsp;→
-              </div>
-            </Link>
-          </div>
-
-          <div className="flex justify-center mt-14">
-            <Link href="https://twitter.com/taigaozawa">
-              <div className="cursor-pointer">
-                <Twitter className="fill-current text-gray-800 hover:text-gray-500 trainsition duration-500" width="30px" height="30px" />
-              </div>
-            </Link>
-            <Link href="https://twitter.com/taigaozawa">
-              <div className="cursor-pointer">
-                <GitHub className="ml-2 fill-current hover:text-gray-500 transition duration-500" width="30px" height="30px" />
-              </div>
-            </Link>
-          </div>
-
         </main>
         <footer>
           <div className="flex justify-center bg-gray-50 pb-5 w-screen text-sm text-gray-700">
@@ -110,4 +94,4 @@ const Home = () => {
   )
 };
 
-export default Home;
+export default Profile;
