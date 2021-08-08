@@ -319,6 +319,7 @@ const Profile = () => {
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <div>
                       <a
+                        rel="noreferrer"
                         target="_blank"
                         href="https://www.future.co.jp"
                         className="flex cursor-pointer hover:text-gray-500 transition duration-200"
@@ -344,7 +345,7 @@ const Profile = () => {
                     {'2020/05 - 2022/03'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
-                    <a target="_blank" href="https://dwango.co.jp/">
+                    <a rel="noreferrer" target="_blank" href="https://dwango.co.jp/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社ドワンゴ'
                           :
@@ -366,7 +367,7 @@ const Profile = () => {
                     {'2020/09 - 2021/05'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
-                    <a target="_blank" href="https://rit-inc.co.jp/">
+                    <a rel="noreferrer" target="_blank" href="https://rit-inc.co.jp/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社RIT'
                           :
@@ -388,7 +389,7 @@ const Profile = () => {
                     {'2020/11'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
-                    <a target="_blank" href="https://www.accenture.com/jp-ja">
+                    <a rel="noreferrer" target="_blank" href="https://www.accenture.com/jp-ja">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'アクセンチュア株式会社'
                           :
@@ -411,7 +412,7 @@ const Profile = () => {
                     {'2020/04 - 2020/10'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
-                    <a target="_blank" href="http://www.shukutoku-school.com/index.html">
+                    <a rel="noreferrer" target="_blank" href="http://www.shukutoku-school.com/index.html">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '淑徳日本語学校'
                           :
@@ -434,7 +435,7 @@ const Profile = () => {
                     {'2020/10'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
-                    <a target="_blank" href="https://www.nttdata.com/">
+                    <a rel="noreferrer" target="_blank" href="https://www.nttdata.com/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社エヌ・ティ・ティ・データ（NTTデータ）'
                           :
@@ -456,7 +457,7 @@ const Profile = () => {
                     {'2020/08 - 2021/09'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
-                    <a target="_blank" href="https://www.future.co.jp">
+                    <a rel="noreferrer" target="_blank" href="https://www.future.co.jp">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'フューチャー株式会社'
                           :
@@ -478,7 +479,7 @@ const Profile = () => {
                     {'2020/08'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
-                    <a target="_blank" href="https://caraquri.com/">
+                    <a rel="noreferrer" target="_blank" href="https://caraquri.com/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'からくり株式会社'
                           :
@@ -525,9 +526,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <div className="">
-                      {qualifications.map((qualification) => {
+                      {qualifications.map((qualification, i) => {
                         return (
-                          <div className="text-sm bg-gray-200 mx-0.5 my-1 px-1 rounded text-gray-700 font-bold hover:bg-sky-300 transition duration-200 cursor-default">
+                          <div
+                            key={i}
+                            className="text-sm bg-gray-200 mx-0.5 my-1 px-1 rounded text-gray-700 font-bold hover:bg-sky-300 transition duration-200 cursor-default">
                             {lang === 'ja'
                               ?
                               qualification[0]
@@ -546,9 +549,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <div className="flex flex-wrap">
-                      {businessSkills.map(skill => {
+                      {businessSkills.map((skill, i) => {
                         return (
-                          <div className="text-sm bg-gray-200 m-0.5 px-1 rounded text-gray-700 font-bold hover:bg-sky-300 transition duration-200 cursor-default">
+                          <div
+                            key={i}
+                            className="text-sm bg-gray-200 m-0.5 px-1 rounded text-gray-700 font-bold hover:bg-sky-300 transition duration-200 cursor-default">
                             {skill}
                           </div>)
                       })}
@@ -561,9 +566,11 @@ const Profile = () => {
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
                     <div className="flex flex-wrap">
-                      {personalSkills.map(skill => {
+                      {personalSkills.map((skill, i) => {
                         return (
-                          <div className="text-sm bg-gray-200 m-0.5 px-1 rounded text-gray-700 font-bold hover:bg-sky-300 transition duration-200 cursor-default">
+                          <div
+                            key={i}
+                            className="text-sm bg-gray-200 m-0.5 px-1 rounded text-gray-700 font-bold hover:bg-sky-300 transition duration-200 cursor-default">
                             {skill}
                           </div>)
                       })}
@@ -584,13 +591,15 @@ const Profile = () => {
 
           <div className="mx-auto max-w-7xl px-4 mt-5 flex justify-center">
             <div className="break-words overflow-scroll flex flex-wrap flex-col">
-              {interests.map(e =>
-                <div className="border border-gray-400 text-gray-600 text-sm rounded mx-0.5 px-1 my-0.5 hover:bg-pink-500 hover:text-white transition duration-100 cursor-default"># {
-                  lang === 'ja' ?
-                    e[0]
-                    :
-                    e[1]
-                }</div>)}
+              {interests.map((e, i) =>
+                <div
+                  key={i}
+                  className="border border-gray-400 text-gray-600 text-sm rounded mx-0.5 px-1 my-0.5 hover:bg-pink-500 hover:text-white transition duration-100 cursor-default"># {
+                    lang === 'ja' ?
+                      e[0]
+                      :
+                      e[1]
+                  }</div>)}
             </div>
           </div>
 
@@ -603,12 +612,12 @@ const Profile = () => {
           </div>
 
           <div className="flex justify-center mt-5">
-            <a target="_blank" href="https://twitter.com/taigaozawa">
+            <a rel="noreferrer" target="_blank" href="https://twitter.com/taigaozawa">
               <div className="cursor-pointer">
                 <Twitter className="fill-current text-gray-800 hover:text-gray-500 trainsition duration-500" width="30px" height="30px" />
               </div>
             </a>
-            <a target="_blank" href="https://github.com/taigaozawa">
+            <a rel="noreferrer" target="_blank" href="https://github.com/taigaozawa">
               <div className="cursor-pointer">
                 <GitHub className="ml-2 fill-current hover:text-gray-500 transition duration-500" width="30px" height="30px" />
               </div>

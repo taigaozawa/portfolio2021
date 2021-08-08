@@ -56,7 +56,7 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center mt-12">
-            <Link href="/">
+            <Link href="/" passHref>
               <div className="px-2 pt-2 pb-1.5 rounded bg-yellow-300 hover:bg-yellow-400 transition duration-500 cursor-pointer">
                 <span className="font-bold">
                   トップ&nbsp;

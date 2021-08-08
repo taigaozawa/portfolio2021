@@ -10,7 +10,7 @@ const Header = () => {
       <header className="fixed top-0 w-screen border-b bg-white">
         <div className="px-4 pt-3 pb-2  mx-auto max-w-7xl">
           <div className="flex justify-between">
-            <Link href="/">
+            <Link href="/" passHref>
               <div className=" text-xl font-montserrat cursor-pointer">
                 TaigaOzawa
               </div>
@@ -26,7 +26,7 @@ const Header = () => {
 
       <div className="top-12 fixed w-screen bg-white border-t-2 z-50" hidden={!showMenu} >
         <div className=" px-4 py-4 max-w-7xl mx-auto text-gray-500 ">
-          <Link href="/">
+          <Link href="/" passHref>
             <div
               className="pb-1 hover:text-red-400 cursor-pointer border-b transition duration-200"
               onClick={() => { setShowMenu(false) }}
@@ -35,7 +35,7 @@ const Header = () => {
               <span>&nbsp;Top</span>
             </div>
           </Link>
-          <Link href="/profile">
+          <Link href="/profile" passHref>
             <div
               className="pb-1 pt-2 hover:text-red-400 cursor-pointer border-b transition duration-200"
               onClick={() => { setShowMenu(false) }}
@@ -44,7 +44,7 @@ const Header = () => {
               <span>&nbsp;Profile</span>
             </div>
           </Link>
-          <Link href="/notes">
+          <Link href="/notes" passHref>
             <div
               className="pt-1.5 hover:text-red-400 cursor-pointer transition duration-200"
               onClick={() => { setShowMenu(false) }}

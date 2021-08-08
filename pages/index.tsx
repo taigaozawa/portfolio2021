@@ -69,7 +69,7 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center mt-12">
-            <Link href="/profile">
+            <Link href="/profile" passHref>
               <div className="px-2 pt-2 pb-1.5 rounded bg-sky-600 hover:bg-sky-700 transition duration-500 text-white cursor-pointer">
                 <span className="font-bold">
                   詳しいプロフィール&nbsp;
@@ -79,7 +79,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="flex justify-center mt-2">
-            <Link href="/notes">
+            <Link href="/notes" passHref>
               <div className="px-2 pt-2 pb-1.5 rounded bg-pink-600 hover:bg-pink-700 transition duration-500 text-white cursor-pointer">
                 <span className="font-bold">
                   ノート・ブログ
@@ -89,12 +89,12 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center mt-14">
-            <a target="_blank" href="https://twitter.com/taigaozawa">
+            <a rel="noreferrer" target="_blank" href="https://twitter.com/taigaozawa">
               <div className="cursor-pointer">
                 <Twitter className="fill-current text-gray-800 hover:text-gray-500 trainsition duration-500" width="30px" height="30px" />
               </div>
             </a>
-            <a target="_blank" href="https://github.com/taigaozawa">
+            <a rel="noreferrer" target="_blank" href="https://github.com/taigaozawa">
               <div className="cursor-pointer">
                 <GitHub className="ml-2 fill-current hover:text-gray-500 transition duration-500" width="30px" height="30px" />
               </div>
