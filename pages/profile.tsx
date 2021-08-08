@@ -174,7 +174,7 @@ const Profile = () => {
           </div>
 
           <div className="flex justify-center">
-            <div className="mt-36 text-2xl font-bold font-montserrat">
+            <div className="mt-36 text-lg sm:text-2xl font-bold font-montserrat">
               <div className={`px-5 border-${messageColor}-400 border rounded pt-3 pb-2 transition text-gray-1000 duration-1000`}>
                 プロフィール Profile
               </div>
@@ -193,58 +193,58 @@ const Profile = () => {
             <div className="break-words overflow-scroll">
               <table className="">
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '氏名' : 'NAME'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '小澤 泰河' : 'Taiga Ozawa'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '誕生年' : 'BIRTHYEAR'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '1997（平成9）年' : '1997'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '出生地' : 'BIRTHPLACE'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '兵庫県伊丹市' : 'Itami City, Hyogo Pref. (near Osaka), Japan'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '居住地' : 'RESIDENCE'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '茨城県つくば市' : 'Tsukuba City, Ibaraki Pref. (near Tokyo), Japan'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '所属' : 'UNIVERSITY'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '筑波大学 大学院' : 'The graduate school, University of Tsukuba'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '専攻' : 'MAJOR'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '理工情報生命学術院 数理物質科学研究群 物理学学位プログラム' : 'Master\'s Program in Physics, Degree Programs in Pure and Applied Sciences, Graduate School of Science and Technology'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '研究室' : 'LAB.'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '原子核理論研究室（計算科学研究センター）' : 'Nuclear Theory Group, Center for Computational Sciences'}
                   </td>
                 </tr>
@@ -264,30 +264,30 @@ const Profile = () => {
             <div className="break-words overflow-scroll">
               <table className="">
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/04 - 2022/03'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '筑波大学 大学院 理工情報生命学術院 数理物質科学研究群 物理学学位プログラム'
                       :
                       'Master\'s Program in Physics, Degree Programs in Pure and Applied Sciences, Graduate School of Science and Technology, University of Tsukuba'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2016/04 - 2020/03'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '首都大学東京 都市教養学部 理工学系 物理学コース（現・東京都立大学 理学部 物理学科）'
                       :
                       'Department of Physics, Tokyo Metropolitan University'}
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2013/04 - 2016/03'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     {lang === 'ja' ? '私立淑徳高等学校'
                       :
                       'Shukutoku High School'}
@@ -313,10 +313,10 @@ const Profile = () => {
 
               <table className="">
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2022 -'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <div>
                       <a
                         target="_blank"
@@ -329,7 +329,7 @@ const Profile = () => {
                         <External className="pt-1 fill-current hover:text-gray-500 " />
                       </a>
                     </div>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         '正社員 / ITコンサルタント / ソフトウェア開発'
                         :
@@ -340,10 +340,10 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/05 - 2022/03'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <a target="_blank" href="https://dwango.co.jp/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社ドワンゴ'
@@ -352,7 +352,7 @@ const Profile = () => {
                         <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         '学生アルバイト / プログラミング等教材開発 / 社内ツール開発'
                         :
@@ -362,10 +362,10 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/09 - 2021/05'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <a target="_blank" href="https://rit-inc.co.jp/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社RIT'
@@ -374,7 +374,7 @@ const Profile = () => {
                         <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         '長期インターンシップ / ソフトウェア開発'
                         :
@@ -384,10 +384,10 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/11'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <a target="_blank" href="https://www.accenture.com/jp-ja">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'アクセンチュア株式会社'
@@ -396,7 +396,7 @@ const Profile = () => {
                         <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         'インターンシップ（ハッカソン型）/ ソフトウェア開発'
                         :
@@ -407,10 +407,10 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/04 - 2020/10'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <a target="_blank" href="http://www.shukutoku-school.com/index.html">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '淑徳日本語学校'
@@ -419,7 +419,7 @@ const Profile = () => {
                         <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         '非常勤講師 / 留学生向け集団授業（理科）'
                         :
@@ -430,10 +430,10 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/10'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <a target="_blank" href="https://www.nttdata.com/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? '株式会社エヌ・ティ・ティ・データ（NTTデータ）'
@@ -442,7 +442,7 @@ const Profile = () => {
                         <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         'インターンシップ / ソフトウェア開発'
                         :
@@ -452,10 +452,10 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/08 - 2021/09'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <a target="_blank" href="https://www.future.co.jp">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'フューチャー株式会社'
@@ -464,7 +464,7 @@ const Profile = () => {
                         <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         'インターンシップ / ソフトウェア開発'
                         :
@@ -474,10 +474,10 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {'2020/08'}
                   </td>
-                  <td className="px-2 pt-3 pb-2 text-base">
+                  <td className="px-2 pt-3 pb-2 text-sm sm:text-base">
                     <a target="_blank" href="https://caraquri.com/">
                       <div className="flex cursor-pointer hover:text-gray-500 transition duration-200">
                         {lang === 'ja' ? 'からくり株式会社'
@@ -486,7 +486,7 @@ const Profile = () => {
                         <External className="pl-2 pt-1 fill-current hover:text-gray-500 " />
                       </div>
                     </a>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm text-gray-500">
                       {lang === 'ja' ?
                         'インターンシップ / ソフトウェア開発'
                         :
@@ -497,7 +497,7 @@ const Profile = () => {
                 </tr>
               </table>
               <div>
-                <div className="px-2 mt-2 text-sm text-gray-500">
+                <div className="px-2 mt-2 text-xs sm:text-sm text-gray-500">
                   {lang === 'ja' ?
                     'その他、塾講師・教育実習・飲食店アルバイトなど'
                     :
@@ -520,7 +520,7 @@ const Profile = () => {
 
               <table className="">
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '資格' : 'QUALIFICATION'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
@@ -541,7 +541,7 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '業務経験のある技術等' : 'TECH SKILLS (BUSINESS EXP.)'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">
@@ -556,7 +556,7 @@ const Profile = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-b">
-                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-sm">
+                  <td className="px-2 font-bold text-gray-600 pt-3 pb-2 text-xs sm:text-sm">
                     {lang === 'ja' ? '使用経験のある技術等' : 'TECH SKILLS (PERSONAL EXP.)'}
                   </td>
                   <td className="px-2 pt-3 pb-2 text-base">

@@ -62,8 +62,10 @@ const Home = () => {
             <span>物理学学位プログラム（M2）</span>
           </div>
           <div className="flex justify-center text-gray-500">
-            <span>Master&apos;s Program in Physics,&nbsp;</span>
-            <span>University of Tsukuba</span>
+            <div className="break-normal text-center">
+              <span>Master&apos;s Program in Physics,&nbsp;</span>
+              <span>University of Tsukuba</span>
+            </div>
           </div>
 
           <div className="flex justify-center mt-12">
@@ -87,16 +89,16 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center mt-14">
-            <Link href="https://twitter.com/taigaozawa">
+            <a target="_blank" href="https://twitter.com/taigaozawa">
               <div className="cursor-pointer">
                 <Twitter className="fill-current text-gray-800 hover:text-gray-500 trainsition duration-500" width="30px" height="30px" />
               </div>
-            </Link>
-            <Link href="https://github.com/taigaozawa">
+            </a>
+            <a target="_blank" href="https://github.com/taigaozawa">
               <div className="cursor-pointer">
                 <GitHub className="ml-2 fill-current hover:text-gray-500 transition duration-500" width="30px" height="30px" />
               </div>
-            </Link>
+            </a>
           </div>
 
         </main>
